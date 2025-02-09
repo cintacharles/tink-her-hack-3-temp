@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postpartum Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .login-form, .signup-form {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .login-form input, .signup-form input, .mood-select {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form button, .signup-form button, .mood-button {
+            background: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .image-section {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .image-section img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .image-section h2 {
+            color: #ff6f61;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+        .mood-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script>
+        function showActivities() {
+            var mood = document.getElementById("mood").value;
+            var activities = {
+                "happy": "Enjoy a walk in nature, listen to uplifting music, or write in a gratitude journal.",
+                "sad": "Try deep breathing exercises, talk to a loved one, or watch a comforting movie.",
+                "anxious": "Practice meditation, do a short workout, or use guided relaxation techniques.",
+                "tired": "Take short naps, drink plenty of water, and practice gentle stretching exercises."
+            };
+            document.getElementById("activity-result").innerText = activities[mood] || "Select a mood to see suggested activities.";
+        }
+    </script>
+</head>
+<body>
+    <header>Postpartum Support & Recovery</header>
+    <div class="container">
+        <div class="image-section">
+            <h2>Hello, Mama!</h2>
+            <img src="https://janikaayurveda.com/wp-content/uploads/2023/03/Postpartum-Mother-and-New-Baby-Can-Keep-Cool-This-Summer.png" alt="Postpartum Mother and Baby" height="450px">
+        </div>
+        <div class="mood-section">
+            <h2>How Are You Feeling Today?</h2>
+            <select id="mood" class="mood-select">
+                <option value="">-- Select Mood --</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="tired">Tired</option>
+            </select>
+            <button class="mood-button" onclick="showActivities()">Get Activities</button>
+            <p id="activity-result"></p>
+    </div>
+    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/2ocA-zS3SoI?si=Go3bNhKalnAsj-eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+</body>
+    </div>
+    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/AnVo0WGBpW8?si=Fo_cnwfjJpYqibNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+    <footer>
+        &copy; 2025 Postpartum Support | You Are Not Alone
+    </footer>
+</body>
+</html>
